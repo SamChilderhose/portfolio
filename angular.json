@@ -32,7 +32,6 @@
               "node_modules/aos/dist/aos.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/styles.css"
-             
             ],
             "scripts": []
           },
@@ -124,6 +123,10 @@
               "devServerTarget": "my-portfolio:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
