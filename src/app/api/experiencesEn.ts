@@ -20,6 +20,7 @@ export const experiencesEn = [
         technologies: 'Javascript/CSS/HTML, Tableau, Google Sheets',
         missions: [
             "Onboard new clients to CRM and personalized website",
+            "Onboard new clients to CRM and personalized website",
         ],
         detailIsDisplayed: false,
     },
