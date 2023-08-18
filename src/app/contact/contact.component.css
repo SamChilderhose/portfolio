@@ -36,6 +36,14 @@ body{
     width: 25%;
 }
 
+.form-padding {
+    padding-bottom: 100px;
+}
+
+.mobile-width {
+    width: 400px;
+}
+
 .contact-form button:focus{
     box-shadow:none;
 }

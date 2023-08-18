@@ -10,6 +10,9 @@ import { locale as french } from '../shared/i18n/fr';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  subject: string = '';
+  message: string = '';
+  mobile = false;
 
   constructor(private _translationLoaderService: TranslationLoaderService) {
     this._translationLoaderService.loadTranslations(english, french);
@@ -17,6 +20,17 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
-   
+    if (window.screen.width <= 1000) { // 768px portrait
+      this.mobile = true;
+    }
+  }
+
+  composeEmail() {
+    console.log("Logging message:")
+    console.log(this.message)
+    const recipient = 'samchilderhose@gmail.com';
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(this.subject)}&body=${encodeURIComponent(this.message)}`;
+    
+    window.location.href = mailtoLink;
   }
 }

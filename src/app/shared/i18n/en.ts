@@ -3,7 +3,7 @@ export const locale = {
     data: {
         'about': {
             'title': 'About',
-            'jobTitle': 'Web Developer and Data Engineer',
+            'jobTitle': 'Web and Data Engineer',
             'introductionOfMe': "Data engineering and analytics hold immense importance as they enable organizations to extract valuable insights from the vast amount of information available today. My aspiration lies in contributing to a more data-driven world by leveraging my skills to design efficient data pipelines, process information, and develop actionable insights. By aiding in the seamless transformation of raw data into meaningful knowledge, I aim to empower informed decision-making and foster innovation across various domains.",
             'passionateAboutDevelopment':'Passionate about development',
             'mobility': 'Mobile throughout France',
@@ -17,12 +17,12 @@ export const locale = {
         'contact': {
             'contactMe': 'Contact Me',
             'notHesitateToContactMe': 'Do not hesitate to contact me',
-            'identify': 'Identify',
-            'enterIdentify': 'Enter your identify',
+            'identify': 'Name',
+            'enterIdentify': 'Enter your name',
             'email': 'Email',
             'enterEmail': 'Enter your email',
-            'object': 'Object',
-            'enterObject': 'Enter object',
+            'object': 'Subject',
+            'enterObject': 'Enter subject',
             'message': 'Message',
             'send': 'Send',
         },

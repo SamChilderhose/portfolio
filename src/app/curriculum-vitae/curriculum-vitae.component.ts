@@ -14,9 +14,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class CurriculumVitaeComponent implements OnInit {
   experiences:any=experiencesEn;
-  planeIcon: any ;
-  gameIcon:any;
-  volleyBallIcon:any;
 
   constructor(private _translationLoaderService: TranslationLoaderService,private _translateService: TranslateService) {
     this._translationLoaderService.loadTranslations(english, french);
@@ -31,9 +28,7 @@ export class CurriculumVitaeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.planeIcon=awesom.faPlane;
-    this.gameIcon=awesom.faGamepad;
-    this.volleyBallIcon=awesom.faVolleyballBall;
+    
   }
   
   detailOnClick(experience:any) {

@@ -75,3 +75,10 @@ fa-icon{
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
   }
+
+.fade-in { animation: fadeIn 2s; }
+/* title fade in effect */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
