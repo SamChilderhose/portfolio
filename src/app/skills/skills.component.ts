@@ -10,9 +10,9 @@ import { locale as french } from '../shared/i18n/fr';
 })
 export class SkillsComponent implements OnInit {
   skills:any={
-    technologies:[{name:"JavaScript/Typescript", percent:90,remark:'excellent'},{name:"Angular, React, BootStrap", percent:90,remark:'excellent'},{name:"SQL", percent:90,remark:'excellent'}, {name:"Python, R", percent:90,remark:'excellent'}],
-    tools:[{name:"Git",percent:90,remark:'excellent'},{name:"Excel",percent:90,remark:'excellent'},{name:"Linux, Windows",percent:70,remark:'very-good'},{name:"MySql, PgSql",percent:90,remark:'excellent'},{name:"Docker, Kubernetes",percent:50,remark:'average'}, {name:"Postman",percent:90,remark:'excellent'} , {name:"Notion",percent:90,remark:'excellent'}],
-    methodologies:[{name:"Scrum",percent:70,remark:'very-good'},{name:"DevOps",percent:50,remark:'average'},{name:"CI/CD",percent:90,remark:'excellent'}]
+    technologies:[{name:"JavaScript/Typescript", remark:'excellent', description: "2 years experience in work environment"},{name:"Angular, React, BootStrap",remark:'excellent'},{name:"SQL",remark:'excellent'}, {name:"Python, R",remark:'excellent'}, {name:"MongoDB",remark:'excellent'}],
+    tools:[{name:"Git",remark:'excellent'},{name:"Excel",remark:'excellent'},{name:"Linux, Windows",remark:'excellent'},{name:"MySql, PgSql",remark:'excellent'},{name:"Docker, Kubernetes",remark:'excellent'}, {name:"Postman",remark:'excellent'} , {name:"Notion",remark:'excellent'}],
+    methodologies:[{name:"Scrum",remark:'excellent'},{name:"DevOps",remark:'excellent'},{name:"CI/CD",remark:'excellent'}]
   };
 
   constructor(private _translationLoaderService: TranslationLoaderService) {

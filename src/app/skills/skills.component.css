@@ -24,6 +24,11 @@
 
 }
 
+.skill-description {
+  font-size: 15px;
+  font-weight: 500;
+}
+
 .competence-Wrapper{
   line-height: 0.1 0.7em;
   height: 12px;
@@ -46,7 +51,7 @@
 }
 
 .excellent{
-  width: 90%;
+  width: 100%;
 }
 
 .very-good{

@@ -39,18 +39,12 @@ export const locale = {
             'goodLevel': 'Fluent',
             'french': 'French',
             'english': 'English',
-            'masterDegreeTwo': "Master's degree 2 IT",
-            'masterDegreeTwoDesc': "Master of degital services",
-            'masterDegreeOne': "Master's degree 1 IT",
-            'masterDegreeOneDesc': "General Master Computer Science",
             'bachlorDegree': "Bachelor's degree",
             'bachlorDegreeDesc': "Math & Computer Science",
             'university': 'University of Toronto, Canada',
             'mission':'Mission',
             'technologies':'Technologies',
             'detail':'Detail',
-            'tripsCountries':'Belgium, Spain, Netherlands, Swiss',
-            'boardGamesPlayed':'Checkers and dominoes game, Among US, Ludo, ..etc',
             'years':'years'
         },
         'header': {
