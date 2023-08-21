@@ -49,7 +49,7 @@ export const projectsEn = [
             },            
         ],
         url:'#portfolio',
-        detail:"<p>Display of the details of pokemon and their trainers.</p> <p>The two micro-service application contains: pokemon management and trainer management, which exposes a REST/JSON communication channel.<br>The 3rd WEB-UI micro-service connects to both micro-services.</p>",
+        detail:"<p>Movie Review Website</p>",
         codeSourceUrl:'https://github.com/SamChilderhose/movie_review_site',
         detailIsDisplayed: false,
     },
