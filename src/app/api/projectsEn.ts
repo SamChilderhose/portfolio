@@ -64,7 +64,7 @@ export const projectsEn = [
             },
         ],
         url:'https://transfer-riddle-solver.herokuapp.com/index.html',
-        detail:"Display of the steps for solving the decanting puzzle. Given two empty tanks of capacity X and Y, how to obtain precisely T liters in one of the two tanks (T being an integer). You can fill or empty a tank , and transfer the contents from one to the other, until the source is empty or the destination full.",
+        detail:"IRT Model",
         codeSourceUrl:'https://github.com/SamChilderhose',
         detailIsDisplayed: false,
     },
