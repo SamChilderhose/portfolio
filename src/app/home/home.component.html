@@ -1,0 +1,16 @@
+<section id="home" [ngStyle]="{backgroundImage:'url(assets/images/home-background.jpg)'}" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container aos-init aos-animate" data-aos="fade-in">
+        <h1 id="title" class="mt-3 fade-in-title slide-in title"> Sam Childerhose </h1>
+        <div *ngIf="mobile">
+            <div #typedElement class="typed" class="mobile-description">
+                <p>Data Analytics & Engineering</p>
+            </div>
+        </div>
+        
+        <div *ngIf="!mobile">
+            <div #typedElement class="typed">
+                <p>Data Analytics & Engineering</p>
+            </div>
+        </div>
+    </div>
+</section>

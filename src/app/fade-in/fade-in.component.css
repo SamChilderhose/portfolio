@@ -1,0 +1,6 @@
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 3s ease-out, transform 3s ease-out;
+  }
+  

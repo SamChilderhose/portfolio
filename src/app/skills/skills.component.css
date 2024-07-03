@@ -1,0 +1,101 @@
+.bg-lightgray, .skillData-Wrapper {
+    background-color: #ddd;
+}
+.skillData-Wrapper {
+    width: 100%;
+}
+
+#skillgraph {
+  padding: 1em; 
+}
+
+.skill-percent{
+  margin-top: 10px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.skillLabel{
+  width: 100%;
+  margin-top: 10px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18d7;
+
+}
+
+.skill-description {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.competence-Wrapper{
+  line-height: 0.1 0.7em;
+  height: 12px;
+  width: .1em;
+  float: left;
+  color: white;
+  text-align: center;
+}
+
+.skillData-Wrapper, .label {
+  width: 100%; 
+}
+
+.skillData, .skillData-Wrapper {
+  line-height: 0.1 0.7em;
+  height: 12px;
+  float: left;
+  color: white;
+  text-align: center; 
+}
+
+.excellent{
+  width: 100%;
+}
+
+.very-good{
+  width: 80%;
+}
+
+.good{
+  width: 70%;
+}
+
+.average{
+  width: 50%;
+}
+
+.bg-rust {
+    background-color: #149ddd;
+}
+
+.skill-border {
+  border: 2px solid #b8e1f4; 
+  border-radius: 10px; 
+  box-sizing: border-box; 
+  padding-bottom: 10px; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+  margin-bottom: 15px;
+  background-color: #f3fafd;
+}
+
+.skill-border:hover {
+  border-color: #149ddd;
+  cursor: pointer;
+}
+
+.skillTitle:hover{
+  transition: padding-left 0.3s ease;
+  padding-left: 50px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+

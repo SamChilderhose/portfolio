@@ -1,0 +1,62 @@
+<section id="skills">
+    <div class="container">
+        <h2><strong>{{'skills.title' | translate}}</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="row mt-2">
+           
+            <div class="col-lg-4" data-aos="fade-up " data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>{{'skills.technologies' | translate}}</strong></h5>
+                <div id="skillgraph">
+                    <div class='row skill-row' *ngFor="let technologie of skills.languages;">
+                            <div class="label d-flex flex-row skill-border" (click)="clickSkill(technologie)" [ngClass]="{ 'skillTitle': !technologie.isDisplayed }">
+                                <span class="skillLabel">
+                                    {{technologie.name}}
+                                    <br> 
+                                    <span *ngIf="technologie.isDisplayed" class="skill-description" [innerHTML]="technologie.description"> </span>
+                                    <!-- <app-fade-in *ngIf="technologie.isDisplayed"> <span class="skill-description" [innerHTML]="technologie.description"> </span> </app-fade-in> -->
+                                </span>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>{{'skills.tools' | translate}}</strong></h5>
+                <div id="skillgraph" class="panel panel-default">
+                  <div class='row skill-row' *ngFor="let tool of skills.tools;">
+                    <div class="label d-flex flex-row skill-border" 
+                         (click)="clickSkill(tool)" 
+                         [ngClass]="{ 'skillTitle': !tool.isDisplayed }">
+                      <span class='skillLabel'>{{tool.name}}
+                        <br>
+                        <span *ngIf="tool.isDisplayed" class="skill-description" [innerHTML]="tool.description"> 
+                        </span>
+                      </span>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>{{'skills.methodologies' | translate}}</strong></h5>
+                <div id="skillgraph" class="panel panel-default">
+                    <div class='row skill-row' *ngFor="let methodologie of skills.other;">
+                        <div class="label d-flex flex-row skill-border"
+                            (click)="clickSkill(methodologie)" 
+                            [ngClass]="{ 'skillTitle': !methodologie.isDisplayed }"
+                        >
+                            <span class='skillLabel'>
+                                {{methodologie.name}}
+                                <br>
+                                <span *ngIf="methodologie.isDisplayed" class="skill-description"> {{methodologie.description}} </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

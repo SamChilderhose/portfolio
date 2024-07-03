@@ -1,0 +1,88 @@
+<section id="cv">
+    <div class="container">
+        <h2><strong>   {{'education.title' | translate}}</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="row">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>{{'education.eductionTitle' | translate}}</strong></h4>
+                <ul class="timeline">
+                    <li>
+                        <h5>{{'education.bachlorDegree' | translate}}</h5>
+                        <em class="font-italic">{{'education.bachlorDegreeDesc' | translate}}<br> {{'education.university' | translate}}</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2018 - 2023</p> 
+                            <button  type="button"
+                                class="btn btn-primary"
+                                (click)="educationOnClick()">
+                                <span *ngIf="!educationDescription.isDisplayed">+ Detail</span>
+                                <span *ngIf="educationDescription.isDisplayed">- Detail</span>
+                            </button>
+                        </div>
+                        <div>
+                            <!-- <h4><strong>{{'educationDescription.description' | translate}}</strong></h4> -->
+                            
+                            <div *ngIf="educationDescription.isDisplayed" data-aos="fade-up">
+                                <p>Highlights:</p>
+                                <span *ngFor="let course of educationDescription.courses;let index = index">
+                                    <strong>{{course.title}}</strong> <br>
+                                    {{course.description}} <br> <br>
+                                </span>
+                            </div>
+
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <h5>{{'education.awards' | translate}}</h5>
+                        <span *ngFor="let award of educationDescription.awards;">
+                            <strong>{{award.title}}</strong> <br>
+                            <em class="font-italic">{{'education.university' | translate}}</em>
+                            <br> <br>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>{{'education.experiencesTitle' | translate}}</strong></h4>
+                <ul class="timeline">
+                    <li *ngFor="let experience of experiences;">
+                        <h5>{{experience.title}}</h5>
+                        <em>{{experience.company}}</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">{{experience.period}}</p>
+                            <button (click)="detailOnClick(experience)" type="button"
+                                class="btn btn-primary">
+                                <span *ngIf="!experience.detailIsDisplayed">+</span><span *ngIf="experience.detailIsDisplayed">-</span> {{'education.detail' | translate}}</button>
+                        </div>
+                        <div *ngIf="experience.detailIsDisplayed">
+                            <div data-aos="fade-up">
+                            <span *ngFor="let mission of experience.missions;let index = index">
+                                <strong>{{'education.mission' | translate}} - </strong>{{mission}} <br>
+                            </span>
+                            <strong>{{'education.technologies' | translate}}:</strong> {{experience.technologies}}
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="container row">
+                    <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <h4><strong>{{'education.download' | translate}}</strong></h4>
+                    </div>
+                </div>
+                <div class="container row">
+                    <div class="mt-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <a target="_blank" href="https://samchilderhose.github.io/portfolio/assets/pdfs/resume_sam_childerhose.pdf" download="resume_sam_childerhose.pdf"> 
+                            
+                            <h4> <img src="assets/images/download.png" width="30"
+                                alt="download" class="dlButton"><strong>{{'education.centerOfInterest' | translate}}</strong></h4> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
